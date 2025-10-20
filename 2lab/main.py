@@ -16,15 +16,5 @@ def check_brackets(s):
         return "Ошибка: не все скобки закрыты"
     return "ok"
 
-
-#Проверка
-print(check_brackets("()"))        # ok
-print(check_brackets("(]"))        # Ошибка на позиции 2
-print(check_brackets("("))         # Ошибка: не все скобки закрыты
-print(check_brackets(")"))         # Ошибка на позиции 1
-print(check_brackets("([])"))      # ok
-print(check_brackets("([)]"))      # Ошибка на позиции 3
-print(check_brackets("{[()]}"))    # ok
-print(check_brackets("{[(])}"))    # Ошибка на позиции 5
-print(check_brackets("(((())))"))  # ok
-print(check_brackets("((())"))     # Ошибка: не все скобки закрыты
+print(check_brackets("(a)(b(c[d{e{r}f{g}s}w]r)tasd)"))        
+ 
