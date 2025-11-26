@@ -1,12 +1,9 @@
 import math
 
-# ---- Базовый интерфейс через родительский класс ----
 class Shape:
     def area(self): raise NotImplementedError
     def perimeter(self): raise NotImplementedError
-    def vertices(self): return 0   # по умолчанию (круг)
-
-# ---- Конкретные фигуры ----
+    def vertices(self): return 0   
 
 class Triangle(Shape):
     def __init__(self, x1,y1,x2,y2,x3,y3):
@@ -41,7 +38,6 @@ def parse_shape(line):
     if t == "circle":     return Circle(*a)
     raise ValueError("Неизвестная фигура")
 
-# ---- Основная логика ----
 shapes = []
 print("Введите фигуры (triangle/rectangle/circle ...) или команду: area / perimeter / vertices / quit")
 
