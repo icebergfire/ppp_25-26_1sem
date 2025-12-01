@@ -29,7 +29,6 @@ class Circle(Shape):
     def area(self): return math.pi*self.r*self.r
     def perimeter(self): return 2*math.pi*self.r
 
-# ---- Парсер ----
 def parse_shape(line):
     t, *a = line.split()
     a = list(map(float, a))
